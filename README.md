@@ -1,7 +1,7 @@
 # Docker-Containers
  Repositório versionado Git e GitHub
 
-containerempresa
+Container Empresa e Cliente:
 decricao do projeto: Esse projeto contém 2 conteiners de microserviço maven empresa e cliente utilizando JDK8.
 2 springboot conteinerzados
 1 - springboot vai ter uma base de clientes, Salvar em uma base H2
@@ -14,6 +14,7 @@ JDK8
 Maven 3.6.3: necessario para realizar o build do projeto Spring Boot
 Spring Boot com as configurações abaixo: 
 Spring Boot DevTools, Spring Data JPA, H2 Database, OpenFeign, Spring Web, Spring Web Services, Ribbon[Maintenance].
+
 Desenvolvimento:
 Para iniciar o desenvolvimento, é nescessario criar um repositorio no GitHub.
 
@@ -25,5 +26,13 @@ Para construir o projeto com o Maven, executar os comandos abaixo:
 mvn clean install
 O comando irá baixar todas as dependências do projeto e criar um diretório target com os artefatos
 construídos, o que incluem o arquivo .jar do projeto.
+
+Documentação e teste:
+Está sendo usada aplicação Swagger para documentar, criar e consumir APIs REST;
+
+para consumir dados do cliente, esse é o caminho usado: localhost:9010/swagger-ui.html
+
+para consumir dados da empresa, esse é o caminho usada: localhost:8080/swagger-ui.html
+
 
 Features:
